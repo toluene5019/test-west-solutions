@@ -229,7 +229,9 @@ body {
 	padding: 98px 15px 80px;
 	text-transform: uppercase;
 	font-weight: 700;
-
+	@include media(768px) {
+		padding: 40px 20px;
+	}
 }
 
 .offers__menu {
@@ -241,10 +243,10 @@ body {
 }
 
 .offers__filters {
-	padding: 0 20px 20px;
-	// @include media(768px) {
-	// 	margin: 0 20px;
-	// }
+	padding: 0 ;
+	@include media(768px) {
+		padding: 0 20px ;
+	}
 }
 
 .form__select {
@@ -268,6 +270,10 @@ body {
 		background-color: $color-primary-200;
 		color: $color-primary-300;
 		border: 2px solid $color-primary-300;
+	}
+
+	@include media(768px) {
+		margin: 0 0 20px ;
 	}
 }
 
@@ -426,13 +432,6 @@ body {
 	padding: 40px 0 45px;
 }
 
-.subscribe__block {
-	@include media (768px) {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
 .subscribe__descr {
 	.subscribe__title {
 		font-family: $fontNotoSemibold;
@@ -450,6 +449,9 @@ body {
 
 .subscribe__descr {
 	padding: 0;
+	@include media(768px) {
+		padding: 20px;
+	}
 }
 
 .subscribe__form {
@@ -458,6 +460,9 @@ body {
 	gap: 20px;
 	font-family: $fontNotoRegular;
 	font-size: 15px;
+	@include media(768px) {
+		flex-direction: column;
+	}
 
 	.subscribe__mail {
 		flex: 0 1 505px;
@@ -467,7 +472,7 @@ body {
 		border: 1px solid $color-secondary-300;
 		border-radius: 15px;
 		line-height: 20px;
-
+		
 		&:focus {
 			border-color: $color-secondary-200;
 		}
@@ -478,6 +483,9 @@ body {
 
 		&--invalid {
 			border: 1px solid red;
+		}
+		@include media(768px) {
+			flex: 0;
 		}
 	}
 
@@ -495,11 +503,19 @@ body {
 			background-color: transparent;
 			color: $color-primary-200;
 		}
+
+		@include media(768px) {
+			flex: 0;
+			padding: 14px 20px 16px;
+		}
 	}
 }
 
 .faq {
 	padding: 120px 0 150px;
+	@include media(768px) {
+		padding: 60px 20px;
+	}
 
 	.faq__title {
 		font-family: $fontPoppins;
@@ -508,6 +524,9 @@ body {
 		line-height: 75px;
 		text-transform: uppercase;
 		color: $color-secondary-100;
+		@include media(768px) {
+			font-size: 50px;
+		}
 	}
 
 

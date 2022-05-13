@@ -325,6 +325,11 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media only screen and (max-width: 768px) {
+  .offers__title {
+    padding: 40px 20px;
+  }
+}
 
 .offers__menu {
   display: -webkit-box;
@@ -340,7 +345,12 @@ body {
 }
 
 .offers__filters {
-  padding: 0 20px 20px;
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  .offers__filters {
+    padding: 0 20px;
+  }
 }
 
 .form__select {
@@ -367,6 +377,11 @@ body {
   background-color: #f8f8f8;
   color: #DF4E3C;
   border: 2px solid #DF4E3C;
+}
+@media only screen and (max-width: 768px) {
+  .offers__btn {
+    margin: 0 0 20px;
+  }
 }
 
 .offers__settings {
@@ -538,18 +553,6 @@ body {
   padding: 40px 0 45px;
 }
 
-@media only screen and (max-width: 768px) {
-  .subscribe__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .subscribe__descr .subscribe__title {
   font-family: "Noto Sans Semibold", sans-serif;
   font-size: 25px;
@@ -565,6 +568,11 @@ body {
 .subscribe__descr {
   padding: 0;
 }
+@media only screen and (max-width: 768px) {
+  .subscribe__descr {
+    padding: 20px;
+  }
+}
 
 .subscribe__form {
   display: -webkit-box;
@@ -576,6 +584,14 @@ body {
   gap: 20px;
   font-family: "Noto Sans Regular", sans-serif;
   font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .subscribe__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .subscribe__form .subscribe__mail {
   -webkit-box-flex: 0;
@@ -597,6 +613,13 @@ body {
 .subscribe__form .subscribe__mail--invalid {
   border: 1px solid red;
 }
+@media only screen and (max-width: 768px) {
+  .subscribe__form .subscribe__mail {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+}
 .subscribe__form .subscribe__button {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 190px;
@@ -614,9 +637,22 @@ body {
   background-color: transparent;
   color: #f8f8f8;
 }
+@media only screen and (max-width: 768px) {
+  .subscribe__form .subscribe__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    padding: 14px 20px 16px;
+  }
+}
 
 .faq {
   padding: 120px 0 150px;
+}
+@media only screen and (max-width: 768px) {
+  .faq {
+    padding: 60px 20px;
+  }
 }
 .faq .faq__title {
   font-family: "Poppins", sans-serif;
@@ -625,6 +661,11 @@ body {
   line-height: 75px;
   text-transform: uppercase;
   color: #AEAEAE;
+}
+@media only screen and (max-width: 768px) {
+  .faq .faq__title {
+    font-size: 50px;
+  }
 }
 .faq .accordion-item {
   background-color: transparent;
@@ -702,8 +743,4 @@ footer .social__links {
   footer .social__links {
     padding: 0;
   }
-}
-
-.show {
-  display: block;
 }
