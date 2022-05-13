@@ -345,7 +345,7 @@ body {
 }
 
 .offers__filters {
-  padding: 0;
+  padding: 20px 0;
 }
 @media only screen and (max-width: 768px) {
   .offers__filters {
