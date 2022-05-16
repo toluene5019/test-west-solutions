@@ -46,6 +46,26 @@ make.addEventListener("change", function () {
 });
 
 
+const model = document.getElementById("car-model");
+const modelItems = document.querySelectorAll(".card__item");
+
+model.addEventListener("change", function () {
+  let value = model.value;
+  [...modelItems].forEach((item) => {
+    if (value === "") {
+        item.classList.remove("hidden");
+    } else {
+        const model = item.dataset.model;
+        if (value === model) {
+            item.classList.remove('hidden')
+        } else {
+            item.classList.add('hidden')
+        }
+    }
+  });
+});
+
+
 const year = document.getElementById("car-year");
 const items = document.querySelectorAll(".card__item");
 

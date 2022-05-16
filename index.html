@@ -104,15 +104,14 @@
               <option class="form-option" value="hyundai">Hyundai</option>
               <option class="form-option" value="mercedes">Mercedes-Benz</option>
             </select>
-            <select class="form__select" aria-label="Default select">
-              <option class="form-option" selected>Model</option>
-              <option class="form-option" value="1">Tiguan</option>
-              <option class="form-option" value="2">Highlander</option>
-              <option class="form-option" value="3">RX 350</option>
-              <option class="form-option" value="3">Highlander</option>
-              <option class="form-option" value="3">GLE-Class</option>
-              <option class="form-option" value="3">Venza</option>
-              <option class="form-option" value="3">RX 350</option>
+            <select class="form__select"  id="car-model" aria-label="Default select">
+              <option class="form-option" value="" selected>Model</option>
+              <option class="form-option" value="tiguan">Tiguan</option>
+              <option class="form-option" value="highlander">Highlander</option>
+              <option class="form-option" value="rx350">RX 350</option>
+              <option class="form-option" value="elantra">Elantra</option>
+              <option class="form-option" value="gle">GLE-Class</option>
+              <option class="form-option" value="venza">Venza</option>
             </select>
             <select class="form__select" aria-label="Default select">
               <option class="form-option" selected>Trim</option>
@@ -159,7 +158,7 @@
 
         <div class="offers__products">
           <div class="card card__item" data-year="2019" data-mile="19855"
-            data-make="volkswagen" data-price="34888">
+            data-make="volkswagen" data-model="tiguan" data-price="34888">
             <div class="card__item-block">
               <img src="img/tiguan.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -180,7 +179,7 @@
           </div>
 
           <div class="card card__item" data-year="2014" data-mile="69000"
-          data-make="toyota" data-price="27875">
+          data-make="toyota"  data-model="highlander" data-price="27875">
             <div class="card__item-block card__wrap-new">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -201,7 +200,7 @@
           </div>
 
           <div class="card card__item" data-year="2017" data-mile="39850"
-          data-make="lexus" data-price="38775">
+          data-make="lexus" data-model="rx350" data-price="38775">
             <div class="card__item-block">
               <img src="img/rx-350-sport.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -222,7 +221,7 @@
           </div>
 
           <div class="card card__item" data-year="2016" data-mile="104000"
-          data-make="toyota" data-price="23728">
+          data-make="toyota" data-model="highlander" data-price="23728">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -243,7 +242,7 @@
           </div>
 
           <div class="card card__item" data-year="2017" data-mile="95000"
-          data-make="hyundai" data-price="11788">
+          data-make="hyundai"  data-model="elantra" data-price="11788">
             <div class="card__item-block">
               <img src="img/elantra.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -264,7 +263,7 @@
           </div>
 
           <div class="card card__item" data-year="2019" data-mile="59800"
-          data-make="mercedes" data-price="38878">
+          data-make="mercedes" data-model="gle" data-price="38878">
             <div class="card__item-block">
               <img src="img/gle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -285,7 +284,7 @@
           </div>
 
           <div class="card card__item" data-year="2019" data-mile="99000"
-          data-make="toyota" data-price="18620">
+          data-make="toyota"  data-model="venza" data-price="18620">
             <div class="card__item-block card__wrap-sold">
               <img src="img/venza-sold.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -306,7 +305,7 @@
           </div>
 
           <div class="card card__item" data-year="2016" data-mile="86000"
-          data-make="lexus" data-price="34888">
+          data-make="lexus" data-model="rx350" data-price="34888">
             <div class="card__item-block card__wrap-new">
               <img src="img/rx-350-sport.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -327,7 +326,7 @@
           </div>
 
           <div class="card card__item" data-year="2019" data-mile="19855"
-          data-make="volkswagen" data-price="34888">
+          data-make="volkswagen" data-model="tiguan" data-price="34888">
             <div class="card__item-block">
               <img src="img/tiguan.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -348,7 +347,7 @@
           </div>
 
           <div class="card card__item" data-year="2014" data-mile="69000"
-          data-make="toyota" data-price="27875">
+          data-make="toyota" data-model="highlander" data-price="27875">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -369,7 +368,7 @@
           </div>
 
           <div class="card card__item" data-year="2017" data-mile="39850"
-          data-make="lexus" data-price="38775">
+          data-make="lexus" data-model="rx350" data-price="38775">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -390,7 +389,7 @@
           </div>
 
           <div class="card card__item" data-year="2016" data-mile="104000"
-          data-make="toyota" data-price="23728">
+          data-make="toyota" data-model="highlander" data-price="23728">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -411,7 +410,7 @@
           </div>
 
           <div class="card card__item" data-year="2019" data-mile="19855"
-          data-make="volkswagen" data-price="34888">
+          data-make="volkswagen" data-model="tiguan" data-price="34888">
             <div class="card__item-block card__wrap-new">
               <img src="img/tiguan.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -432,7 +431,7 @@
           </div>
 
           <div class="card card__item" data-year="2014" data-mile="69000"
-          data-make="toyota" data-price="27875">
+          data-make="toyota"  data-model="highlander" data-price="27875">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -453,7 +452,7 @@
           </div>
 
           <div class="card card__item" data-year="2017" data-mile="39850"
-          data-make="lexus" data-price="38775">
+          data-make="lexus" data-model="rx350" data-price="38775">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -474,7 +473,7 @@
           </div>
 
           <div class="card card__item" data-year="2016" data-mile="104000"
-          data-make="toyota" data-price="23728">
+          data-make="toyota" data-model="highlander" data-price="23728">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -495,7 +494,7 @@
           </div>
 
           <div class="card card__item" data-year="2017" data-mile="95000"
-          data-make="hyundai" data-price="11788">
+          data-make="hyundai" data-model="elantra" data-price="11788">
             <div class="card__item-block">
               <img src="img/elantra.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -516,7 +515,7 @@
           </div>
 
           <div class="card card__item" data-year="2016" data-mile="59800"
-          data-make="mercedes" data-price="38878">
+          data-make="mercedes" data-model="gle" data-price="38878">
             <div class="card__item-block">
               <img src="img/gle.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -537,7 +536,7 @@
           </div>
 
           <div class="card card__item" data-year="2015" data-mile="99000"
-          data-make="toyota"  data-price="18620">
+          data-make="toyota" data-model="venza"  data-price="18620">
             <div class="card__item-block">
               <img src="img/venza.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -558,7 +557,7 @@
           </div>
 
           <div class="card card__item" data-year="2016" data-mile="86000"
-          data-make="lexus"  data-price="34888">
+          data-make="lexus"  data-model="rx350" data-price="34888">
             <div class="card__item-block card__wrap-new">
               <img src="img/rx-350-sport.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -579,7 +578,7 @@
           </div>
 
           <div class="card card__item" data-year="2019" data-mile="19855"
-          data-make="volkswagen" data-price="34888">
+          data-make="volkswagen" data-model="tiguan" data-price="34888">
             <div class="card__item-block">
               <img src="img/tiguan.png" class="img-fluid card__item-img" alt="car10">
             </div>
@@ -600,7 +599,7 @@
           </div>
 
           <div class="card card__item" data-year="2014" data-mile="69000"
-          data-make="toyota" data-price="27875">
+          data-make="toyota"  data-model="highlander" data-price="27875">
             <div class="card__item-block">
               <img src="img/highlander-xle.png" class="img-fluid card__item-img" alt="car10">
             </div>
