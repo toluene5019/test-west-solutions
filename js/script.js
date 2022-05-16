@@ -93,7 +93,14 @@ const sortItems = document.querySelectorAll(".card__item");
 
 sortType.addEventListener('change', function() {
   let value = sortType.value;
-    if ( value === 'mile-asc') {
+    if (value === "") {
+      const sorted = [...sortItems]
+      sort.innerHTML = '';
+      for (let el of sorted) {
+        sort.appendChild(el)
+      }
+    }
+    else if ( value === 'mile-asc') {
       const sorted = [...sortItems].sort(function(a, b) {
         return a.dataset.mile - b.dataset.mile;
       });
