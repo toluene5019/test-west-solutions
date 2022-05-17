@@ -26,6 +26,27 @@ menuItems.forEach(
 )
 //-----MOBILE MENU-----//
 
+
+const year = document.getElementById("car-year");
+const items = document.querySelectorAll(".card__item");
+
+year.addEventListener("change", function () {
+  let value = year.value;
+  [...items].forEach((item) => {
+    if (value === "") {
+        item.classList.remove("hidden");
+    } else {
+        const year = item.dataset.year;
+        if (value === year) {
+            item.classList.remove('hidden')
+        } else {
+            item.classList.add('hidden')
+        }
+    }
+  });
+});
+
+
 const make = document.getElementById("car-make");
 const yearItems = document.querySelectorAll(".card__item");
 
@@ -66,17 +87,17 @@ model.addEventListener("change", function () {
 });
 
 
-const year = document.getElementById("car-year");
-const items = document.querySelectorAll(".card__item");
+const trim = document.getElementById("car-trim");
+const trimItems = document.querySelectorAll(".card__item");
 
-year.addEventListener("change", function () {
-  let value = year.value;
-  [...items].forEach((item) => {
+trim.addEventListener("change", function () {
+  let value = trim.value;
+  [...trimItems].forEach((item) => {
     if (value === "") {
         item.classList.remove("hidden");
     } else {
-        const year = item.dataset.year;
-        if (value === year) {
+        const trim = item.dataset.trim;
+        if (value === trim) {
             item.classList.remove('hidden')
         } else {
             item.classList.add('hidden')
@@ -84,6 +105,7 @@ year.addEventListener("change", function () {
     }
   });
 });
+
 
 const mileage = document.getElementById("car-mileage");
 const elements = document.querySelectorAll(".card__item");
