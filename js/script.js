@@ -30,6 +30,24 @@ menuItems.forEach(
 const year = document.getElementById("car-year");
 const items = document.querySelectorAll(".card__item");
 
+const stockCar = document.querySelector(".form__check-input")
+
+stockCar.addEventListener("change", function() {
+  if (this.checked) {
+    [...items].forEach((item) => {
+      if (item.classList.contains("car__sold")) {
+        item.classList.add('hidden')
+      } 
+    })
+  } else {
+    [...items].forEach((item) => {
+      if (item.classList.contains("car__sold")) {
+        item.classList.remove('hidden')
+      } 
+    })
+  } 
+})
+
 year.addEventListener("change", function () {
   let value = year.value;
   [...items].forEach((item) => {
