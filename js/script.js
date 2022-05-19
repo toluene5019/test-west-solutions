@@ -29,7 +29,6 @@ menuItems.forEach(
 
 const year = document.getElementById("car-year");
 const items = document.querySelectorAll(".card__item");
-
 const stockCar = document.querySelector(".form__check-input")
 
 stockCar.addEventListener("change", function() {
@@ -146,10 +145,11 @@ mileage.addEventListener("change", function () {
 });
 
 
-
 const sortType = document.getElementById("sort-type")
 const sort = document.querySelector(".offers__products");
 const sortItems = document.querySelectorAll(".card__item");
+const arrowUp = document.querySelector(".arrow__up")
+const arrowDown = document.querySelector(".arrow__down")
 
 sortType.addEventListener('change', function() {
   let value = sortType.value;
@@ -159,6 +159,8 @@ sortType.addEventListener('change', function() {
       for (let el of sorted) {
         sort.appendChild(el)
       }
+      arrowUp.style.color = "#DF4E3C"
+      arrowDown.style.color = "#8D8D8D"
     }
     else if ( value === 'mile-asc') {
       const sorted = [...sortItems].sort(function(a, b) {
@@ -169,6 +171,8 @@ sortType.addEventListener('change', function() {
       for (let el of sorted) {
         sort.appendChild(el)
       }
+      arrowUp.style.color = "#DF4E3C"
+      arrowDown.style.color = "#8D8D8D"
     }
 
     else if (value === 'mile-desc') {
@@ -180,6 +184,8 @@ sortType.addEventListener('change', function() {
       for (let el of sorted) {
         sort.appendChild(el)
       }
+      arrowUp.style.color = "#8D8D8D"
+      arrowDown.style.color = "#DF4E3C"
     }
 
     else if (value === 'price-asc') {
@@ -191,6 +197,8 @@ sortType.addEventListener('change', function() {
       for (let el of sorted) {
         sort.appendChild(el)
       }
+      arrowUp.style.color = "#DF4E3C"
+      arrowDown.style.color = "#8D8D8D"
     }
 
     else if (value === 'price-desc') {
@@ -202,6 +210,8 @@ sortType.addEventListener('change', function() {
       for (let el of sorted) {
         sort.appendChild(el)
       }
+      arrowUp.style.color = "#8D8D8D"
+      arrowDown.style.color = "#DF4E3C"
     }
 
 })
