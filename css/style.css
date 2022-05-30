@@ -278,6 +278,11 @@ body {
   font-size: 50px;
   padding: 0 0 32px 0;
 }
+@media only screen and (max-width: 768px) {
+  .main__info-title {
+    font-size: 46px;
+  }
+}
 
 .main__info-text {
   max-width: 295px;
@@ -328,7 +333,9 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .offers__title {
-    padding: 40px 20px;
+    padding: 20px;
+    font-size: 46px;
+    line-height: 55px;
   }
 }
 
@@ -366,7 +373,7 @@ body {
   border-radius: 15px;
 }
 
-.offers__btn {
+.car__quantity-btn {
   max-width: 290px;
   width: 100%;
   height: 48px;
@@ -374,13 +381,13 @@ body {
   color: #f8f8f8;
   background-color: #DF4E3C;
 }
-.offers__btn:hover {
+.car__quantity-btn:hover {
   background-color: #f8f8f8;
   color: #DF4E3C;
   border: 2px solid #DF4E3C;
 }
 @media only screen and (max-width: 768px) {
-  .offers__btn {
+  .car__quantity-btn {
     margin: 0 0 20px;
   }
 }
@@ -690,7 +697,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .faq {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 }
 .faq .faq__title {
@@ -703,7 +710,8 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .faq .faq__title {
-    font-size: 50px;
+    font-size: 46px;
+    line-height: 55px;
   }
 }
 .faq .accordion-item {
